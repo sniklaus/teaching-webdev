@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
+
+		<script type="text/javascript">
+			var functionSort = function(intInput) {
+				// sort intInput and return the sorted array
+
+				// note that like in c, an array is a reference to a continuous memory block
+				// while the input it is being passed by value, it points to the same memory block
+				// returning the input is thus not really necessary / is redundant
+
+				return intInput;
+			};
+
+			console.log(functionSort([5, 4, 3, 2, 1])); // expected: [1, 2, 3, 4, 5]
+			console.log(functionSort([51, 64, 70, 45, 22])); // expected: [22, 45, 51, 64, 70]
+		</script>
+	</head>
+	<body>
+
+	</body>
+</html>

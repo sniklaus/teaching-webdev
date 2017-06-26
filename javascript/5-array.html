@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
+
+		<script type="text/javascript">
+			var intArray = [];
+
+			var functionInsert = function(intNumber) {
+				// insert intNumber into intArray
+			};
+
+			var functionDelete = function(intNumber) {
+				// remove the first occurrence of intNumbers in intArray
+
+				// intArray might not contain intNumber
+				// the function does not have an effect in this case
+			};
+
+			var functionLookup = function(intIndex) {
+				// return the intNumber from intArray at intIndex, deleting the obtained intNumber
+
+				// intIndex might be out of bounds
+				// should this be the case, return null
+
+				return 0;
+			};
+
+			var functionValues = function() {
+				// return a string of the concatenated intNumber in intArray, separated by commas
+
+				return '';
+			};
+
+			functionInsert(1);
+			functionInsert(2);
+			functionInsert(3);
+			functionInsert(2);
+			functionInsert(1);
+			console.log(functionValues()); // expected: '1, 2, 3, 2, 1'
+			console.log(functionLookup(1)); // expected: 2
+			console.log(functionValues()); // expected: '1, 3, 2, 1'
+			functionDelete(1);
+			console.log(functionValues()); // expected: '3, 2, 1'
+			console.log(functionLookup(2)); // expected: 1
+			console.log(functionValues()); // expected: '3, 2'
+			functionDelete(-1);
+			console.log(functionLookup(-1)); // expected: null
+		</script>
+	</head>
+	<body>
+
+	</body>
+</html>

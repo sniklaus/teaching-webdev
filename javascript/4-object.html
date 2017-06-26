@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
+
+		<script type="text/javascript">
+			var objectHandle = {};
+
+			var functionInsert = function(strKey, strValue) {
+				// insert the property with strKey and strValue into objectHandle
+			};
+
+			var functionDelete = function(strKey) {
+				// remove the property with strKey from objectHandle
+			};
+
+			var functionLookup = function(strKey) {
+				// return the strValue from objectHandle that is associated with strKey
+
+				// objectHandle might not contain strKey
+				// should this be the case, return an empty string
+
+				return '';
+			};
+
+			var functionKeys = function() {
+				// return a string of the concatenated strKey in objectHandle, separated by commas
+
+				return '';
+			};
+
+			functionInsert('hello', 'world');
+			functionInsert('lorem', 'ipsum');
+			functionInsert('sit', 'amet');
+			console.log(functionKeys()); // expected: 'hello, lorem, sit' (order may be different)
+			console.log(functionLookup('lorem')); // expected: 'ipsum'
+			functionDelete('lorem');
+			console.log(functionKeys()); // expected: 'hello, sit' (order may be different)
+			console.log(functionLookup('lorem')); // expected: ''
+		</script>
+	</head>
+	<body>
+
+	</body>
+</html>

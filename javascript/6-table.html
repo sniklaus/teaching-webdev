@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
+	</head>
+	<body>
+		<div id="output">output</div>
+
+		<script type="text/javascript">
+			var functionMake = function(strInput) {
+				// create a html table that represents the csv given in strInput set the content of the output div to this html table
+
+				document.getElementById('output').innerHTML = '';
+			};
+
+			functionMake('a,b,c\n1,2,3\n'); // the new line at the end should not make a difference
+			
+			// expected table for functionCreate('a,b\n'):
+			//   <table border="1">
+			//     <tr>
+			//       <td>a</td>
+			//       <td>b</td>
+			//     </tr>
+			//   </table>
+			
+			// expected table for functionCreate('a,b,c\n1,2,3\n'):
+			//   <table border="1">
+			//     <tr>
+			//       <td>a</td>
+			//       <td>b</td>
+			//       <td>c</td>
+			//     </tr>
+			//     <tr>
+			//       <td>1</td>
+			//       <td>2</td>
+			//       <td>3</td>
+			//     </tr>
+			//   </table>
+		</script>
+	</body>
+</html>
