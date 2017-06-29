@@ -22,16 +22,18 @@ strUser="CHANGE THIS"
 strPassword="CHANGE THIS"
 ```
 
+Should you not be using the machines in the Linux lab, you furthermore need to make sure that you have `wget` installed. While you are encouraged to use your own machine, please note that I am unable to provide individual support to get the framework to run outside of the Linux lab.
+
 ## usage
-Every exercise comes with a bash script that uploads the exercise to the grading server and gathers the response. For example, after navigating to the folder that contains the HTML exercises, you can use the following command to submit the `hello` exercise.
+Every exercise comes with a bash script that uploads the exercise to the grading server and gathers the response. For example, after navigating to the folder that contains the HTML exercises, you can use the following command to submit the `1-hello` exercise.
 
 ```
-bash hello.bash
+bash 1-hello.bash
 ```
 
 This command should complete with a message stating that the username does not match. This is to be expected since we did not complete this exercise yet. Should this message not appear, make sure that you configured the setup file as stated in the download section.
 
-Try executing this command again after updating the `hello.txt` and replacing the questions marks with your username that you were given. The command should now complete with a success message and the [webinterface](http://mercury.cs.pdx.edu/) of the grading server should now indicate that you received a point for this exercise.
+Try executing this command again after updating the `1-hello.txt` and replacing the questions marks with your username that you were given. The command should now complete with a success message and the [webinterface](http://mercury.cs.pdx.edu/) of the grading server should now indicate that you received a point for this exercise.
 
 ## grading
 You can submit exercises as often as you want until you pass them. This emphasizes the trial-and-error methodology that you encounter in the real world. There is no penalty for failed submissions, the grading is purely based on the score that the webinterface indicates by the time the respective deadline has passed.
@@ -64,6 +66,7 @@ The exercises in this category already come with some scaffolding and provide in
 Additionally, make sure to read the following hints that are there to guide you into the right direction and provide additional context.
 
 * It is entirely up to you how to achieve the given tasks, there are multiple solutions for each exercise.
+* The error messages from the server can be confusing, make sure to think of edge cases like being passed an empty array.
 * Make sure that you are aware of the `g` and `i` flags of the regexp constructor.
 * Consider the `toFixed` function of numerals in order to format a number and express it as a string.
 * Enumerating the properties of an object happens in an arbitrary order, the grading server handles this appropriately.
