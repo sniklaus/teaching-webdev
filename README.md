@@ -22,7 +22,7 @@ strUser="CHANGE THIS"
 strPassword="CHANGE THIS"
 ```
 
-Should you not be using the machines in the Linux lab, you furthermore need to make sure that you have `wget` installed. While you are encouraged to use your own machine, please note that I am unable to provide individual support to get the framework to run outside of the Linux lab.
+Should you not be using the machines in the Linux lab, you also need to make sure that you have `wget` installed. While you are encouraged to use your own machine, please note that I am unable to provide individual support to get the framework to run outside of the Linux lab.
 
 ## usage
 Every exercise comes with a bash script that uploads the exercise to the grading server and gathers the response. For example, after navigating to the folder that contains the HTML exercises, you can use the following command to submit the `1-hello` exercise.
@@ -36,7 +36,7 @@ This command should complete with a message stating that the username does not m
 Try executing this command again after updating the `1-hello.txt` and replacing the questions marks with your username that you were given. The command should now complete with a success message and the [webinterface](http://mercury.cs.pdx.edu/) of the grading server should now indicate that you received a point for this exercise.
 
 ## grading
-You can submit exercises as often as you want until you pass them. This emphasizes the trial-and-error methodology that you encounter in the real world. There is no penalty for failed submissions, the grading is purely based on the score that the webinterface indicates by the time the respective deadline has passed.
+You can submit exercises as often as you want until you pass them. This emphasizes the trial-and-error methodology that you encounter in the real world. There is no penalty for failed submissions, the grading is purely based on the score that the webinterface indicates by the time the respective deadline has passed. There is nothing to submit to the course website, your submissions are already stored on the grading server.
 
 ## `html/*`
 In this category, you are asked to visually reproduce the given images by specifying the markup in the respective HTML file. There is no scaffolding provided, the HTML files are thus empty. Make sure to consult the webinterface of the grading server to obtain a visual comparison between the target and your submission.
