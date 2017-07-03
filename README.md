@@ -39,18 +39,16 @@ Try executing this command again after updating the `1-hello.txt` and replacing 
 You can submit exercises as often as you want until you pass them. This emphasizes the trial-and-error methodology that you encounter in the real world. There is no penalty for failed submissions, the grading is purely based on the score that the webinterface indicates by the time the respective deadline has passed. You do not need to additionally turn in your solutions, your submissions are already stored on the grading server.
 
 ## `html/*`
-In this category, you are asked to visually reproduce the given images by specifying the markup in the respective HTML file. There is no scaffolding provided, the HTML files are thus empty. Make sure to consult the webinterface of the grading server to obtain a visual comparison between the target and your submission.
-
-Some tags that can potentially help you to achieve this goal are stated blow.
+In this category, you are asked to visually reproduce the given images by specifying the markup in the respective HTML file. There is no scaffolding provided, the HTML files are thus empty. Make sure to consult the webinterface of the grading server to obtain a visual comparison between the target and your submission. Some tags that can potentially help you to achieve this goal are stated blow.
 
 ```
 <br>, <h1>, <h2>, <h3>, <p>, <ul>, <ol>, <li>, <table>, <tr>, <th>, <td>, <input>, <select>, <option>, <textarea>
 ```
 
-## `css/*`
-Just like with the HTML exercises, you are asked to visually reproduce the given images. However, you are already given the markup and you only need to use CSS to extend it. Make sure to consult the webinterface of the grading server to obtain a visual comparison between the target and your submission.
+Should an input element have a label, put the label on the same line. Otherwise, the browser will insert a text node in between the input element and the label. This text node might be desired in certain use cases, the sample solutions do not have it though, which is why having the label on a new line will look visually different.
 
-Some properties that can potentially help you to achieve this goal are stated blow.
+## `css/*`
+Just like with the HTML exercises, you are asked to visually reproduce the given images. However, you are already given the markup and you only need to use CSS to extend it. Make sure to consult the webinterface of the grading server to obtain a visual comparison between the target and your submission. Some properties that can potentially help you to achieve this goal are stated blow.
 
 ```
 display, position, left, top, width, height, margin, border, padding, background-color, color, font-style, font-weight, list-style
