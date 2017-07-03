@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
+
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+		<style type="text/css">
+			#draggable {
+				cursor:pointer;
+
+				width:100px;
+				height:100px;
+
+				background-color:#CCCCCC;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="draggable"></div>
+
+		<script type="text/javascript">
+			// make jQuery('#draggable') draggable such that you can move it around, just like a window of an application on your computer
+
+			// attach a mousedown listener to jQuery('#draggable') that sets the following global variables: a flag that the element is being dragged, the relative position of the mousedown event
+			// you can get the aformentioned relative position within jQuery('#draggable') by using event.pageX / .pageY or jQuery(this).offset().left / .top just like in the listener exercise
+
+			// attach a mousemove listener to the jQuery(document) and keep in mind that due to event bubbling, this event will be fired even if the mouse is on top of jQuery('#draggable')
+			// in this mousemove listener, we can update the position of jQuery('#draggable') in case the global is-being-dragged flag is set and we can make it follow the movement of the mouse
+			// you can try setting the position of jQuery('#draggable') to event.pageX / .pageY but you eventually have to also incorporate the relative position that we computed in the mousedown event
+
+			// attach a mouseup listener to jQuery(document) that resets the global is-being-dragged flag, such that the dragging will stop once you lift the mouse button
+		</script>
+	</body>
+</html>

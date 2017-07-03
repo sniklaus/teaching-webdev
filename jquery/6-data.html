@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
+
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<div id="output"></div>
+
+		<script type="text/javascript">
+			var functionCreate = function(intWidth, intHeight) {
+				// create a table similar to the previous exercie, but with 'click me' as the text for each cell / td element
+				// when a cell / td element is being clicked, its text should be changed to 'y.x' (see example below)
+				// you have to attach a click listener to each cell / td element and i recommend to make use of the jquery data function
+
+				return jQuery('<table></table>');
+			};
+
+			jQuery('#output')
+				.append(functionCreate(3, 2))
+			;
+			
+			// expected table for functionCreate(1, 2):
+			//   <table border="1">
+			//     <tr>
+			//       <td>click me</td> // should change to '1.1' if clicked
+			//       <td>click me</td> // should change to '1.2' if clicked
+			//     </tr>
+			//   </table>
+			
+			// expected table for functionCreate(3, 2):
+			//   <table border="1">
+			//     <tr>
+			//       <td>click me</td> // should change to '1.1' if clicked
+			//       <td>click me</td> // should change to '1.2' if clicked
+			//       <td>click me</td> // should change to '1.3' if clicked
+			//     </tr>
+			//     <tr>
+			//       <td>click me</td> // should change to '2.1' if clicked
+			//       <td>click me</td> // should change to '2.2' if clicked
+			//       <td>click me</td> // should change to '2.3' if clicked
+			//     </tr>
+			//   </table>
+		</script>
+	</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
+
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+		<style type="text/css">
+			.first {
+				width:100px;
+				height:100px;
+			}
+
+			.third {
+				position:fixed;
+				top:10px;
+				right:10px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="first">first</div>
+		<div id="second">second</div>
+		<div id="third" class="third">third</div>
+
+		<script type="text/javascript">
+			// add 'first' as a class to jQuery('#first') and further specify a background color of gray (#CCCCCC)
+
+			// make the text in jQuery('#second') bold as well as italic
+
+			// remove 'third' as a class from jQuery('#third') and apply the style of this class directly to the element instead
+
+			var functionFixed = function(strSelector) {
+				// return whether jQuery(strSelector) has a fixed position
+
+				return false;
+			};
+
+			console.log(functionFixed('#first')); // expected: false
+			console.log(functionFixed('#third')); // expected: true
+
+			var functionClass = function(strSelector, strClass) {
+				// return whether jQuery(strSelector) has strClass (the name of a css class) attached to it
+
+				return false;
+			};
+
+			console.log(functionClass('#first', 'first')); // expected: true
+			console.log(functionClass('#first', 'test')); // expected: false
+		</script>
+	</body>
+</html>

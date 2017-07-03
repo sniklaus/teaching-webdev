@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
+
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+
+		<script type="text/javascript">
+			var functionParse = function(strDate) {
+				// given strDate, return the epoch time that is represented by this date string
+
+				return moment(strDate, 'TODO').valueOf();
+			};
+
+			console.log(functionParse('Sunday - 27th October 1974 - 11:04 AM')); // expected: 152129040000 (assuming pacific standard time)
+			console.log(functionParse('Tuesday - 3rd January 2006 - 05:07 PM')); // expected: 1136336820000 (assuming pacific standard time)
+			console.log(functionParse('Monday - 25th August 1986 - 08:00 AM')); // expected: 525366000000 (assuming pacific standard time)
+		</script>
+	</head>
+	<body>
+
+	</body>
+</html>

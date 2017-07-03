@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
+
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+
+		<script type="text/javascript">
+			var functionModify = function(strDate) {
+				// given strDate, return the epoch time of this date string with the minutes, the seconds and the milliseconds set to zero
+
+				return moment(strDate, 'Do MMMM YYYY - HH:mm:ss.SSS').valueOf();
+			};
+
+			console.log(functionModify('29th August 2028 - 20:18:44.620')); // expected: 1851217200000, which is "29th August 2028 - 20:00:00.000" (assuming pacific standard time)
+			console.log(functionModify('27th February 2019 - 08:38:50.441')); // expected: 1551283200000, which is "27th February 2019 - 08:00:00.000" (assuming pacific standard time)
+			console.log(functionModify('7th June 1973 - 15:14:53.394')); // expected: 108338400000, which is "7th June 1973 - 15:00:00.000" (assuming pacific standard time)
+		</script>
+	</head>
+	<body>
+
+	</body>
+</html>

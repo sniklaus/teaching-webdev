@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
+
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+		<script type="text/javascript">
+			// this code is responsible for setting the background-color of each grid cell - you do thus not need to set the expected background-color manually
+
+			jQuery(document).ready(function() {
+				jQuery('div[class^="col"]')
+					.each(function(intIndex) {
+						jQuery(this)
+							.css({
+								'background-color': ['#00CC66', '#0066CC', '#CC0066', '#CC6600', '#C4A2AD', '#ADC4A2', '#A2C4B9', '#B76B3E', '#8AB73E', '#3E8AB7', '#8667BC'][intIndex]
+							})
+						;
+					})
+				;
+			});
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>

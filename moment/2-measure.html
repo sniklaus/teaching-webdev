@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
+
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+
+		<script type="text/javascript">
+			var functionAlgorithm = function(dblRandom) {
+				var intRandom = Math.round(dblRandom * 10000000);
+				var intSum = 0;
+
+				for (var intIndex = 0; intIndex < intRandom; intIndex += 1) {
+					intSum += Math.pow(Math.sqrt(intIndex), 2);
+				}
+
+				return intSum;
+			};
+
+			var functionMeasure = function(dblRandom) {
+				// call functionAlgorithm(dblRandom) in here, measure how long it takes to execute this function and return the measured time in milliseconds
+
+				return 0;
+			};
+
+			console.log(functionMeasure(Math.random())); // expected: a number that represents the time in milliseconds it took to execute the function
+			console.log(functionMeasure(Math.random())); // expected: a number that represents the time in milliseconds it took to execute the function
+			console.log(functionMeasure(Math.random())); // expected: a number that represents the time in milliseconds it took to execute the function
+		</script>
+	</head>
+	<body>
+
+	</body>
+</html>

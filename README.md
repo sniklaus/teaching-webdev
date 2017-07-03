@@ -36,7 +36,7 @@ This command should complete with a message stating that the username does not m
 Try executing this command again after updating the `1-hello.txt` and replacing the questions marks with your username that you were given. The command should now complete with a success message and the [webinterface](http://mercury.cs.pdx.edu/) of the grading server should now indicate that you received a point for this exercise.
 
 ## grading
-You can submit exercises as often as you want until you pass them. This emphasizes the trial-and-error methodology that you encounter in the real world. There is no penalty for failed submissions, the grading is purely based on the score that the webinterface indicates by the time the respective deadline has passed. There is nothing to submit to the course website, your submissions are already stored on the grading server.
+You can submit exercises as often as you want until you pass them. This emphasizes the trial-and-error methodology that you encounter in the real world. There is no penalty for failed submissions, the grading is purely based on the score that the webinterface indicates by the time the respective deadline has passed. You do not need to additionally turn in your solutions, your submissions are already stored on the grading server.
 
 ## `html/*`
 In this category, you are asked to visually reproduce the given images by specifying the markup in the respective HTML file. There is no scaffolding provided, the HTML files are thus empty. Make sure to consult the webinterface of the grading server to obtain a visual comparison between the target and your submission.
@@ -78,9 +78,61 @@ For these two, the actual exercises are stored on the grading server. They conta
 
 * http://mercury.cs.pdx.edu/exercise/javascript/tools.html
 
-For the second one, navigate to the following link and use the javascript debugger of the developer tools. You will have to set a breakpoint in order to inspect the contents of a variable that contains the flag. Furthermore, you will additionally have to set an earlier breakpoint and modify the content of this variable.
+For the second one, navigate to the following link and use the JavaScript debugger of the developer tools. You will have to set a breakpoint in order to inspect the contents of a variable that contains the flag. Furthermore, you will additionally have to set an earlier breakpoint and modify the content of this variable.
 
 * http://mercury.cs.pdx.edu/exercise/javascript/debug.html
+
+## `jquery/*`
+The exercises in this category already come with some scaffolding and provide inline instructions. You might find the following resources helpful to accomplish the given tasks.
+
+* https://api.jquery.com/jquery/
+* https://api.jquery.com/category/selectors/
+* https://api.jquery.com/category/manipulation/
+* https://api.jquery.com/category/traversing/
+* https://api.jquery.com/category/events/
+
+Courtesy to [cdnjs](https://cdnjs.com/), jQuery in version 3.2.1 is already included as an external resource. Note that you are only allowed to use JavaScript to achieve the task, submissions with modifications outside of the given script tag are rejected by the grading server. The usage of `innerHTML` is likewise not allowed in this exercise category and will similarly lead to rejection by the grading server.
+
+## `moment/*`
+The exercises in this category are similar to the `javascript` category. They come with scaffolding and provide inline instructions. You might find the following resources helpful to accomplish the given tasks.
+
+* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date
+* https://developer.mozilla.org/en-US/docs/Web/API/Performance
+* http://momentjs.com/docs/#/parsing/
+* http://momentjs.com/docs/#/displaying/
+* http://momentjs.com/docs/#/displaying/fromnow/
+* http://momentjs.com/docs/#/manipulating/
+
+Courtesy to [cdnjs](https://cdnjs.com/), Moment.js in version 2.18.1 is already included as an external resource. I would recommend using the vanilla `Date` object for the `2-measure` exercise but you can also still use Moment.js should you so desire. Note that in practice, the `Performance` should be used for such a task.
+
+## `bootstrap/*`
+These exercises are similar to the exercises in the `html` category. You are likewise asked to visually reproduce the given images. Make sure to consult the documentation thoroughly.
+
+* http://getbootstrap.com/getting-started/#examples
+* http://getbootstrap.com/css/#overview-container
+* http://getbootstrap.com/css/#grid
+* http://getbootstrap.com/css/#forms
+* http://getbootstrap.com/css/#tables
+* http://getbootstrap.com/components/#navbar
+* http://getbootstrap.com/components/#panels
+* http://getbootstrap.com/components/#glyphicons
+
+Courtesy to [cdnjs](https://cdnjs.com/), Bootstrap in version 3.3.7 is already included as an external resource. Feel free to copy large parts of the documentation, especially for the `7-combined` exercise.
+
+## `node/*`
+Each exercise in this category consists of writing a webserver that listens on port `process.env.PORT || 8080`, allowing the grading server to specify a custom `process.env.PORT` while you can simply use port `8080` during development. 
+
+In each exercise, your webserver will have to respond to various reqeuests in different ways. There are inline examples of what the requests look like and what your webserver is supposed to respond. You might find the following resources helpful to accomplish the given tasks.
+
+* https://nodejs.org/api/http.html#http_http_createserver_requestlistener
+* https://nodejs.org/api/http.html#http_class_http_incomingmessage
+* https://nodejs.org/api/http.html#http_response_writehead_statuscode_statusmessage_headers
+* https://nodejs.org/api/url.html#url_url_parse_urlstring_parsequerystring_slashesdenotehost
+* https://nodejs.org/api/querystring.html#querystring_querystring_parse_str_sep_eq_options
+* https://nodejs.org/api/dns.html#dns_dns_resolve4_hostname_options_callback
+* https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers
+
+Note that the grading server runs your code in a sandboxed environment due to security reasons. Furthermore, it does not allow you to access certain modules / functions. However, you will not need to use these and should not encounter any issues in this regard. Please refrain from trying to test the security measures, it is unlikely that you will be able to break out of the sandbox but I nevertheless have to spend time investigating each and every time the tamper protection notifies me.
 
 ## linux lab
 When connecting remotely into the Linux lab, please choose one of the machines in the [first](https://cat.pdx.edu/labstatus/labs/cslinlaba/) or the [second](https://cat.pdx.edu/labstatus/labs/cslinlabb/) lab. After selecting a machine, you can use your credentials to establish a connection through ssh. Note that you can alternatively use putty as well.

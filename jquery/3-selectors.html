@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
+
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<table border="1">
+			<tbody>
+				<tr>
+					<td class="try_eq">make this text red (#FF0000)</td>
+					<td class="try_eq">make this text green (#00FF00)</td>
+					<td class="try_eq">make this text blue (#0000FF)</td>
+					<td class="try_eq">make this text yellow (#FFFF00)</td>
+				</tr>
+				<tr>
+					<td class="try_last_child">this text should be left black</td>
+					<td class="try_last_child">this text should be left black</td>
+					<td class="try_last_child">this text should be left black</td>
+					<td class="try_last_child">make this text magenta (#FF00FF)</td>
+				</tr>
+				<tr>
+					<td class="try_nth_child">make this text cyan (#00FFFF)</td>
+					<td class="try_nth_child">this text should be left black</td>
+					<td class="try_nth_child">make this text cyan (#00FFFF)</td>
+					<td class="try_nth_child">this text should be left black</td>
+				</tr>
+			</tbody>
+		</table>
+		<br>
+		<table border="1">
+			<tbody>
+				<tr id="try_children">
+					<td>make this text red (#FF0000)</td>
+					<td>make this text red (#FF0000)</td>
+					<td>make this text red (#FF0000)</td>
+					<td>make this text red (#FF0000)</td>
+				</tr>
+				<tr>
+					<td>make this text green (#00FF00)</td>
+					<td>make this text green (#00FF00)</td>
+					<td id="try_siblings">this text should be left black</td>
+					<td>make this text green (#00FF00)</td>
+				</tr>
+				<tr>
+					<td>make this text blue (#0000FF)</td>
+					<td id="try_prev">this text should be left black</td>
+					<td>this text should be left black</td>
+					<td>this text should be left black</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<script type="text/javascript">
+			// place the javascript code that selects the cells and applies the appropriate colors here
+		</script>
+	</body>
+</html>

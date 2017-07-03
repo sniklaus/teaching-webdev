@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
+
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<input id="first" type="text" value="first">
+		<input id="second" type="button" value="second">
+		<span id="third">third</span>
+		<div id="fourth">fourth</div>
+
+		<script type="text/javascript">
+			var functionGet = function(strSelector) {
+				// determine whether the content of jQuery(strSelector) should be retrieved by using .val() or .text() and return this content
+
+				return '';
+			};
+
+			var functionSet = function(strSelector, strContent) {
+				// determine whether the content of jQuery(strSelector) should be set by using .val() or .text() and set it to strContent
+			};
+
+			console.log(functionGet('#first')); // expected: 'first'
+			console.log(functionGet('#second')); // expected: 'second'
+			console.log(functionGet('#third')); // expected: 'third'
+			console.log(functionGet('#fourth')); // expected: 'fourth'
+			functionSet('#second', 'hello');
+			functionSet('#third', 'world');
+			console.log(functionGet('#first')); // expected: 'first'
+			console.log(functionGet('#second')); // expected: 'hello'
+			console.log(functionGet('#third')); // expected: 'world'
+			console.log(functionGet('#fourth')); // expected: 'fourth'
+		</script>
+	</body>
+</html>
