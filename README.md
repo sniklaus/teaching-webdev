@@ -54,6 +54,8 @@ Just like with the HTML exercises, you are asked to visually reproduce the given
 display, position, left, top, width, height, margin, border, padding, background-color, color, font-style, font-weight, list-style
 ```
 
+Note that the headless browser that is evaluating your submission does not know about flexbox / flexible boxes. For the `7-block` exercise, I recommend having a look at `inline-block` layouting.
+
 ## `javascript/*`
 The exercises in this category already come with some scaffolding and provide inline instructions. You might find the following resources helpful to accomplish the given tasks.
 
@@ -89,10 +91,10 @@ The exercises in this category already come with some scaffolding and provide in
 * https://api.jquery.com/category/traversing/
 * https://api.jquery.com/category/events/
 
-Courtesy to [cdnjs](https://cdnjs.com/), jQuery in version 3.2.1 is already included as an external resource. Note that you are only allowed to use JavaScript to achieve the task, submissions with modifications outside of the given script tag are rejected by the grading server. The usage of `innerHTML` is likewise not allowed in this exercise category and will similarly lead to rejection by the grading server.
+Courtesy to [CDNJS](https://cdnjs.com/), jQuery in version 3.2.1 is already included as an external resource. Note that you are only allowed to use JavaScript to achieve the task, submissions with modifications outside of the given script tag are rejected by the grading server. The usage of `innerHTML` is likewise not allowed in this exercise category and will similarly lead to rejection by the grading server.
 
 ## `moment/*`
-The exercises in this category are similar to the `javascript` category. They come with scaffolding and provide inline instructions. You might find the following resources helpful to accomplish the given tasks.
+The exercises in this category are similar to ones the `javascript` category. They come with scaffolding and provide inline instructions. You might find the following resources helpful to accomplish the given tasks.
 
 * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date
 * https://developer.mozilla.org/en-US/docs/Web/API/Performance
@@ -101,7 +103,7 @@ The exercises in this category are similar to the `javascript` category. They co
 * http://momentjs.com/docs/#/displaying/fromnow/
 * http://momentjs.com/docs/#/manipulating/
 
-Courtesy to [cdnjs](https://cdnjs.com/), Moment.js in version 2.18.1 is already included as an external resource. I would recommend using the vanilla `Date` object for the `2-measure` exercise but you can also still use Moment.js should you so desire. Note that in practice, the `Performance` should be used for such a task.
+Courtesy to [CDNJS](https://cdnjs.com/), Moment.js in version 2.18.1 is already included as an external resource. I would recommend using the vanilla `Date` object for the `2-measure` exercise but you can also still use Moment.js should you so desire. Note that in practice, the `Performance` should be used for such a task.
 
 ## `bootstrap/*`
 These exercises are similar to the exercises in the `html` category. You are likewise asked to visually reproduce the given images. Make sure to consult the documentation thoroughly.
@@ -115,7 +117,7 @@ These exercises are similar to the exercises in the `html` category. You are lik
 * http://getbootstrap.com/components/#panels
 * http://getbootstrap.com/components/#glyphicons
 
-Courtesy to [cdnjs](https://cdnjs.com/), Bootstrap in version 3.3.7 is already included as an external resource. Feel free to copy large parts of the documentation, especially for the `7-combined` exercise.
+Courtesy to [CDNJS](https://cdnjs.com/), Bootstrap in version 3.3.7 is already included as an external resource. Feel free to copy large parts of the documentation, especially for the `7-combined` exercise.
 
 ## `node/*`
 Each exercise in this category consists of writing a webserver that listens on port `process.env.PORT || 8080`, allowing the grading server to specify a custom `process.env.PORT` while you can simply use port `8080` during development. 
