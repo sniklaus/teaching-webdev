@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
+
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<input id="input" type="text" placeholder="input">
+		<br>
+		<input id="submit" type="button" value="submit">
+		<br>
+		<pre id="output">output</pre>
+		
+		<script type="text/javascript">
+			// when somebody enters 'the input text' into the input textbox and clicks the submit button, the script should make a get request to: http://mercury.cs.pdx.edu/exercise/ajax/lorem.txt?strInput=the%20input%20text
+			// the data that is being received by this query is in the text format and might look like: 'received:the input text\ncalculated:eH2wO8kG'
+			// this received data should subsequently set as the content of the output element as follows: 'received:the input text\ncalculated:eH2wO8kG'
+		</script>
+	</body>
+</html>

@@ -1,5 +1,5 @@
 # teaching-webdev
-This project provides the framework for my full stack web development class, in which the students are ought to solve various exercises that are automatically graded by a server.
+This project provides the framework for my full stack web development class in which the students are ought to solve various exercises that are automatically graded by a server.
 
 ## overview
 The repository contains all the exercises together with individual submission scripts. To effectively make use of the framework, you will need a login that you are going to receive at the beginning of the course.
@@ -54,7 +54,7 @@ Just like with the HTML exercises, you are asked to visually reproduce the given
 display, position, left, top, width, height, margin, border, padding, background-color, color, font-style, font-weight, list-style
 ```
 
-Note that the headless browser that is evaluating your submission does not know about flexbox / flexible boxes. For the `7-block` exercise, I recommend having a look at `inline-block` layouting.
+Note that the headless browser on the grading server that is evaluating your submission does not know about flexible boxes / flexbox. For the `7-block` exercise, I accordingly recommend having a look at `inline-block` layouting.
 
 ## `javascript/*`
 The exercises in this category already come with some scaffolding and provide inline instructions. You might find the following resources helpful to accomplish the given tasks.
@@ -122,7 +122,7 @@ Courtesy to [CDNJS](https://cdnjs.com/), Bootstrap in version 3.3.7 is already i
 ## `node/*`
 Each exercise in this category consists of writing a webserver that listens on port `process.env.PORT || 8080`, allowing the grading server to specify a custom `process.env.PORT` while you can simply use port `8080` during development. 
 
-In each exercise, your webserver will have to respond to various reqeuests in different ways. There are inline examples of what the requests look like and what your webserver is supposed to respond. You might find the following resources helpful to accomplish the given tasks.
+In each exercise, your webserver will have to respond to various requests in different ways. There are inline examples of what the requests look like and what your webserver is supposed to respond. You might find the following resources helpful to accomplish the given tasks.
 
 * https://nodejs.org/api/http.html#http_http_createserver_requestlistener
 * https://nodejs.org/api/http.html#http_class_http_incomingmessage
@@ -133,6 +133,63 @@ In each exercise, your webserver will have to respond to various reqeuests in di
 * https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers
 
 Note that the grading server runs your code in a sandboxed environment due to security reasons. Furthermore, it does not allow you to access certain modules / functions. However, you will not need to use these and should not encounter any issues in this regard. Please refrain from trying to test the security measures, it is unlikely that you will be able to break out of the sandbox but I nevertheless have to spend time investigating each and every time the tamper protection notifies me.
+
+## `express/*`
+These exercises are similar to the exercises in the `node` category. You are likewise asked to write a webserver that listens on port `process.env.PORT || 8080` for each exercise. In fact, the first few exercises are equivalent to the ones in the `node` category. However, the usage of the `http` module is prevented and you are forced to use the `express` module instead.
+
+In each exercise, your webserver will have to respond to various requests in different ways. There are inline examples of what the requests look like and what your webserver is supposed to respond. You might find the following resources helpful to accomplish the given tasks.
+
+* https://expressjs.com/en/starter/hello-world.html
+* https://expressjs.com/en/guide/routing.html
+* https://expressjs.com/en/guide/using-middleware.html
+* https://expressjs.com/en/4x/api.html#req
+* https://expressjs.com/en/4x/api.html#res
+* https://expressjs.com/en/resources/middleware/session.html
+* https://expressjs.com/en/resources/middleware/body-parser.html
+* https://github.com/jaredhanson/passport
+* https://github.com/jaredhanson/passport-http
+
+Note that some exercises suggest the usage of a certain middleware. This is not mandatory and should you so desire, you can also solve these tasks without making use of the suggested middleware.
+
+## `mustache/*`
+The exercises in this category consist of writing mustache templates. Each exercise has inline examples of what the template is supposed to achieve. The grading server will render your template and check whether it meets the specification. Make sure to consult the documentation.
+
+* https://github.com/janl/mustache.js#variables
+* https://github.com/janl/mustache.js#sections
+* https://github.com/janl/mustache.js#inverted-sections
+
+To debug the exercises on your own machine, each exercise comes with a server that you can make use of. For example, execute `node 1-lorem.js` and follow the printed instructions. Note that the `3-logic` exercise will require you to use JavaScript within your template.
+
+## `ajax/*`
+Each exercise in this category has the same structure. A user makes an input, your script makes an Ajax request that contains the user input, the server responds and your script visualizes the received information. Feel free to use vanilla JavaScript or jQuery to solve these exercises.
+
+* http://api.jquery.com/jquery.ajax/
+* https://developer.mozilla.org/en-US/docs/AJAX/Getting_Started
+* https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS
+
+Note that these Ajax requests are cross-origin HTTP requests which are usually blocked by the browser due to security reasons. However, the server specifies a wildcard `Access-Control-Allow-Origin` which tells the browser not to block the request.
+
+## `socket/*`
+The first two exercises in this category consist of writing front-end code, while the third exercise asks you to write back-end code. For each exercise, the counterpart is provided such that you can debug your implementation. Follow the inline instructions and make sure to consult the Socket.IO documentation.
+
+* https://socket.io/docs/
+* https://socket.io/docs/client-api/
+* https://socket.io/docs/server-api/
+
+In the `2-draggable` exercise, you can make use of the code that implemented the dragging functionality in the related exercise in the `jquery` category. Note that unlike in the referenced exercise, multiple draggable elements are given here.
+
+## `security/*`
+The exercises in this category are similar to the last two exercises in the `javascript` category. They likewise ask you to visit a website on the grading server in order to obtain a flag. For the first one, navigate to the following link and determine the password of the hash that you are given there.
+
+* http://mercury.cs.pdx.edu/exercise/security/hash.html
+
+For the second one, navigate to the following link and perform a SQL injection to obtain the flag. You will have to list the tables that are available within the database and fetch the tuples from a particular one of them that contains the flag.
+
+* http://mercury.cs.pdx.edu/exercise/security/injection.html
+
+The last one asks you to perform a cross-site scripting attack. Navigate to the following link and inject a script that reads the cookies and forwards them as specified in the instructions. The response from this forwarded request will contain the flag.
+
+* http://mercury.cs.pdx.edu/exercise/security/scripting.html
 
 ## linux lab
 When connecting remotely into the Linux lab, please choose one of the machines in the [first](https://cat.pdx.edu/labstatus/labs/cslinlaba/) or the [second](https://cat.pdx.edu/labstatus/labs/cslinlabb/) lab. After selecting a machine, you can use your credentials to establish a connection through ssh. Note that you can alternatively use putty as well.

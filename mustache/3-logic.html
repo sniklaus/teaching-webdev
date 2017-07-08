@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
+
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+	</head>
+	<body>
+		<!--
+			given a javascript object like:
+				{
+					'objectStocks': [
+						{ 'strName': 'AMD.NAS', 'dblValue': 6.735, 'dblChange': -0.17, 'intTime': 1469635304434, 'intVolume': 19873260 },
+						{ 'strName': 'FME.FRA', 'dblValue': 81.41, 'dblChange': 0.25, 'intTime': 1469635495373, 'intVolume': 506131 },
+						{ 'strName': 'MSFT.NAS', 'dblValue': 56.34, 'dblChange': -0.43, 'intTime': 1469635411375, 'intVolume': 10467243 }
+					]
+				}
+
+			use mustache to produce the output:
+				<table border="1">
+					<tr>
+						<th>name</th>
+						<th>value</th>
+						<th>change</th>
+						<th>time</th>
+						<th>volume</th>
+					</tr>
+					<tr>
+						<td>AMD.NAS</td>
+						<td>6.73</td>
+						<td style="background-color:#BC6772;">-0.17</td>
+						<td>2016.07.27 - 09:01:44.434</td>
+						<td>19.8 M</td>
+					</tr>
+					<tr>
+						<td>FME.FRA</td>
+						<td>81.41</td>
+						<td style="background-color:#ADC4A2;">0.25</td>
+						<td>2016.07.27 - 09:04:55.373</td>
+						<td>506.1 T</td>
+					</tr>
+					<tr>
+						<td>MSFT.NAS</td>
+						<td>56.34</td>
+						<td style="background-color:#BC6772;">-0.43</td>
+						<td>2016.07.27 - 09:03:31.375</td>
+						<td>10.5 M</td>
+					</tr>
+				</table>
+		-->
+	</body>
+</html>

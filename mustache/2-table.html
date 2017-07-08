@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
+	</head>
+	<body>
+		<!--
+			given a javascript object like:
+				{
+					'objectUsers': [
+						{ 'strFirst': 'max', 'strLast': 'baum', 'strGender': 'male', 'boolVisible': true },
+						{ 'strFirst': 'anna', 'strLast': 'hahn', 'strGender': 'female', 'boolVisible': true },
+						{ 'strFirst': 'tim', 'strLast': 'stein', 'strGender': 'male', 'boolVisible': true }
+					],
+					'functionName': function() {
+						return this.strFirst + ' ' + this.strLast;
+					}
+				}
+
+			use mustache to produce the output:
+				<table border="1">
+					<tr>
+						<th>name</th>
+						<th>gender</th>
+					</tr>
+					<tr>
+						<td>max baum</td>
+						<td>male</td>
+					</tr>
+					<tr>
+						<td>anna hahn</td>
+						<td>female</td>
+					</tr>
+					<tr>
+						<td>tim stein</td>
+						<td>male</td>
+					</tr>
+				</table>
+
+			given a javascript object like:
+				{
+					'objectUsers': [
+						{ 'strFirst': 'max', 'strLast': 'baum', 'strGender': 'male', 'boolVisible': false },
+						{ 'strFirst': 'anna', 'strLast': 'hahn', 'strGender': 'female', 'boolVisible': true },
+						{ 'strFirst': 'tim', 'strLast': 'stein', 'strGender': 'male', 'boolVisible': true }
+					],
+					'functionName': function() {
+						return this.strFirst + ' ' + this.strLast;
+					}
+				}
+
+			use mustache to produce the output:
+				<table border="1">
+					<tr>
+						<th>name</th>
+						<th>gender</th>
+					</tr>
+					<tr>
+						<td>anna hahn</td>
+						<td>female</td>
+					</tr>
+					<tr>
+						<td>tim stein</td>
+						<td>male</td>
+					</tr>
+				</table>
+		-->
+	</body>
+</html>
