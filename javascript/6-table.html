@@ -11,6 +11,8 @@
 		<script type="text/javascript">
 			var functionMake = function(strInput) {
 				// create a html table that represents the csv given in strInput set the content of the output div to this html table
+				// you can either create a string that represents the html and use innerHTML to set it or you can use createElement / appendChild
+				// should this function be called multiple times, the output div should only contain the table of the most recent call
 
 				document.getElementById('output').innerHTML = '';
 			};
@@ -25,7 +27,29 @@
 			//     </tr>
 			//   </table>
 			
+			// expected table for functionCreate('a,b'):
+			//   <table border="1">
+			//     <tr>
+			//       <td>a</td>
+			//       <td>b</td>
+			//     </tr>
+			//   </table>
+			
 			// expected table for functionCreate('a,b,c\n1,2,3\n'):
+			//   <table border="1">
+			//     <tr>
+			//       <td>a</td>
+			//       <td>b</td>
+			//       <td>c</td>
+			//     </tr>
+			//     <tr>
+			//       <td>1</td>
+			//       <td>2</td>
+			//       <td>3</td>
+			//     </tr>
+			//   </table>
+			
+			// expected table for functionCreate('a,b,c\n1,2,3'):
 			//   <table border="1">
 			//     <tr>
 			//       <td>a</td>
