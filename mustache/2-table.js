@@ -4,8 +4,8 @@ var fs = require('fs');
 
 var server = express();
 
-server.get('/table.html', function(req, res) {
-	fs.readFile('./table.html', function(err, data) {
+server.get('/2-table.html', function(req, res) {
+	fs.readFile('./2-table.html', function(err, data) {
 		res.writeHead(200, {
 			'Content-Type': 'text/html'
 		});
@@ -27,4 +27,4 @@ server.get('/table.html', function(req, res) {
 
 server.listen(8080);
 
-console.log('go ahead and open "http://localhost:8080/table.html" in your browser');
+console.log('go ahead and open "http://localhost:8080/2-table.html" in your browser');

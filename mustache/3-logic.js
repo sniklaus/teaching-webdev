@@ -4,8 +4,8 @@ var fs = require('fs');
 
 var server = express();
 
-server.get('/logic.html', function(req, res) {
-	fs.readFile('./logic.html', function(err, data) {
+server.get('/3-logic.html', function(req, res) {
+	fs.readFile('./3-logic.html', function(err, data) {
 		res.writeHead(200, {
 			'Content-Type': 'text/html'
 		});
@@ -24,4 +24,4 @@ server.get('/logic.html', function(req, res) {
 
 server.listen(8080);
 
-console.log('go ahead and open "http://localhost:8080/logic.html" in your browser');
+console.log('go ahead and open "http://localhost:8080/3-logic.html" in your browser');

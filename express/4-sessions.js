@@ -3,7 +3,7 @@
 var express = require('express'); // do not change this line
 var session = require('express-session'); // do not change this line
 
-// preface: use the express-session middleware which should make this task rather easy
+// preface: use the express-session middleware with the memory storage which should make this task rather easy
 
 // http://localhost:8080/hello should return 'you must be new' in plain text and implicitly set an ident cookie by using the session middleware
 

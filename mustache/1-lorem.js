@@ -4,8 +4,8 @@ var fs = require('fs');
 
 var server = express();
 
-server.get('/lorem.html', function(req, res) {
-	fs.readFile('./lorem.html', function(err, data) {
+server.get('/1-lorem.html', function(req, res) {
+	fs.readFile('./1-lorem.html', function(err, data) {
 		res.writeHead(200, {
 			'Content-Type': 'text/html'
 		});
@@ -24,4 +24,4 @@ server.get('/lorem.html', function(req, res) {
 
 server.listen(8080);
 
-console.log('go ahead and open "http://localhost:8080/lorem.html" in your browser');
+console.log('go ahead and open "http://localhost:8080/1-lorem.html" in your browser');
