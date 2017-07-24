@@ -36,4 +36,4 @@ io.on('connection', function(objectSocket) {
 	});
 });
 
-console.log('go ahead and open "http://localhost:8080/draggable.html" in your browser');
+console.log('go ahead and open "http://localhost:8080/2-draggable.html" in your browser');

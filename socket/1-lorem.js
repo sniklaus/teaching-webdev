@@ -17,4 +17,4 @@ setInterval(function() {
 	});
 }, 1000);
 
-console.log('go ahead and open "http://localhost:8080/lorem.html" in your browser');
+console.log('go ahead and open "http://localhost:8080/1-lorem.html" in your browser');
