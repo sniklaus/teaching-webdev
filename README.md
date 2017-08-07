@@ -35,6 +35,8 @@ This command should complete with a message stating that the username does not m
 
 Try executing this command again after updating the `1-hello.txt` and replacing the questions marks with your username that you were given. The command should now complete with a success message and the [webinterface](http://mercury.cs.pdx.edu/) of the grading server should now indicate that you received a point for this exercise.
 
+Please note that every exercise only has a single file that you are asked to modify. Therefore, you cannot, for example, add an additional file and add a reference to it since the submission system would not upload it to the grading server. Similarly, some exercises consist of a server and a client where one of them is already provided and you are asked to complete the other one. In this case, you cannot modify the already provided server or client since it likewise would not consider your changes.
+
 ## grading
 You can submit exercises as often as you want until you pass them. This emphasizes the trial-and-error methodology that you encounter in the real world. There is no penalty for failed submissions, the grading is purely based on the score that the webinterface indicates by the time the respective deadline has passed. You do not need to additionally turn in your solutions, your submissions are already stored on the grading server.
 
