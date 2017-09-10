@@ -194,7 +194,7 @@ The last one asks you to perform a cross-site scripting attack. Navigate to the 
 * http://mercury.cs.pdx.edu/exercise/security/scripting.html
 
 ## linux lab
-When connecting remotely into the Linux lab, please choose one of the machines in the [first](https://cat.pdx.edu/labstatus/labs/cslinlaba/) or the [second](https://cat.pdx.edu/labstatus/labs/cslinlabb/) lab. After selecting a machine, you can use your credentials to establish a connection through ssh. Note that you can alternatively use putty as well.
+When connecting remotely into the Linux lab, please choose one of the machines in the [first](https://cat.pdx.edu/labstatus/labs/cslinlaba/) or the [second](https://cat.pdx.edu/labstatus/labs/cslinlabb/) lab. After selecting a machine, you can use your credentials to establish a connection through ssh. Note that you can alternatively use PuTTY as well.
 
 ```
 ssh <username>@<machine>.cs.pdx.edu
