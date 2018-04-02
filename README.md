@@ -78,11 +78,11 @@ Additionally, make sure to read the following hints that are there to guide you 
 ## `javascript/8-tools` / `javascript/9-debug`
 For these two, the actual exercises are stored on the grading server. They contain flags / values that are individual to each student and that you are asked to find. For the first one, navigate to the following link and use the developer tools to find them. You can find hints on where to find them in the corresponding text file.
 
-* http://mercury.cs.pdx.edu/exercise/javascript/tools.html
+* http://mercury.cs.pdx.edu/playground/javascript/tools.html
 
 For the second one, navigate to the following link and use the JavaScript debugger of the developer tools. You will have to set a breakpoint in order to inspect the contents of a variable that contains the flag. Furthermore, you will additionally have to set an earlier breakpoint and modify the content of this variable.
 
-* http://mercury.cs.pdx.edu/exercise/javascript/debug.html
+* http://mercury.cs.pdx.edu/playground/javascript/debug.html
 
 ## `jquery/*`
 The exercises in this category already come with some scaffolding and provide inline instructions. You might find the following resources helpful to accomplish the given tasks.
@@ -110,16 +110,15 @@ Courtesy to [CDNJS](https://cdnjs.com/), Moment.js in version 2.18.1 is already 
 ## `bootstrap/*`
 These exercises are similar to the exercises in the `html` category. You are likewise asked to visually reproduce the given images. Make sure to consult the documentation thoroughly.
 
-* http://getbootstrap.com/getting-started/#examples
-* http://getbootstrap.com/css/#overview-container
-* http://getbootstrap.com/css/#grid
-* http://getbootstrap.com/css/#forms
-* http://getbootstrap.com/css/#tables
-* http://getbootstrap.com/components/#navbar
-* http://getbootstrap.com/components/#panels
-* http://getbootstrap.com/components/#glyphicons
+* https://getbootstrap.com/docs/4.0/examples/
+* https://getbootstrap.com/docs/4.0/layout/overview/
+* https://getbootstrap.com/docs/4.0/layout/grid/
+* https://getbootstrap.com/docs/4.0/content/tables/
+* https://getbootstrap.com/docs/4.0/components/navbar/
+* https://getbootstrap.com/docs/4.0/components/forms/
+* https://fontawesome.com/v4.7.0/
 
-Courtesy to [CDNJS](https://cdnjs.com/), Bootstrap in version 3.3.7 is already included as an external resource. Feel free to copy large parts of the documentation, especially for the `7-combined` exercise.
+Courtesy to [CDNJS](https://cdnjs.com/), Bootstrap in version 4.0.0 is already included as an external resource. Feel free to copy large parts of the documentation, especially for the `7-combined` exercise.
 
 ## `node/*`
 Each exercise in this category consists of writing a webserver that listens on port `process.env.PORT || 8080`, allowing the grading server to specify a custom `process.env.PORT` while you can simply use port `8080` during development. 
@@ -183,15 +182,15 @@ In the `2-draggable` exercise, you can make use of the code that implemented the
 ## `security/*`
 The exercises in this category are similar to the last two exercises in the `javascript` category. They likewise ask you to visit a website on the grading server in order to obtain a flag. For the first one, navigate to the following link and determine the password of the hash that you are given there.
 
-* http://mercury.cs.pdx.edu/exercise/security/hash.html
+* http://mercury.cs.pdx.edu/playground/security/hash.html
 
 For the second one, navigate to the following link and perform a SQL injection to obtain the flag. You will have to list the tables that are available within the database and fetch the tuples from a particular one of them that contains the flag.
 
-* http://mercury.cs.pdx.edu/exercise/security/injection.html
+* http://mercury.cs.pdx.edu/playground/security/injection.html
 
 The last one asks you to perform a cross-site scripting attack. Navigate to the following link and inject a script that reads the cookies and forwards them as specified in the instructions. The response from this forwarded request will contain the flag.
 
-* http://mercury.cs.pdx.edu/exercise/security/scripting.html
+* http://mercury.cs.pdx.edu/playground/security/scripting.html
 
 ## linux lab
 When connecting remotely into the Linux lab, please choose one of the machines in the [first](https://cat.pdx.edu/labstatus/labs/cslinlaba/) or the [second](https://cat.pdx.edu/labstatus/labs/cslinlabb/) lab. After selecting a machine, you can use your credentials to establish a connection through ssh. Note that you can alternatively use PuTTY as well.

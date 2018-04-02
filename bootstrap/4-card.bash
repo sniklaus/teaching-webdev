@@ -3,7 +3,7 @@
 source ./../setup.bash
 
 strCategory="bootstrap"
-strName="6-icons"
-strFile="6-icons.html"
+strName="4-card"
+strFile="4-card.html"
 
 wget -q -O /dev/stdout --auth-no-challenge --user="${strUser}" --password="${strPassword}" --post-file="${strFile}" "${strServer}/test?strCategory=${strCategory}&strAssignment=${strName}"
