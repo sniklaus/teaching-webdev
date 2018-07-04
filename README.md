@@ -56,7 +56,7 @@ Just like with the HTML exercises, you are asked to visually reproduce the given
 display, position, left, top, width, height, margin, border, padding, background-color, color, font-style, font-weight, list-style
 ```
 
-Note that the headless browser on the grading server that is evaluating your submission does not know about flexible boxes / flexbox. For the `7-block` exercise, I accordingly recommend having a look at `inline-block` layouting.
+For the `7-block` exercise, I recommend having a look at `inline-block` layouting. One could likewise solve this exercise using flexbox, I would recommend the simpler solution with `inline-block` though.
 
 ## `javascript/*`
 The exercises in this category already come with some scaffolding and provide inline instructions. You might find the following resources helpful to accomplish the given tasks.
@@ -74,6 +74,8 @@ Additionally, make sure to read the following hints that are there to guide you 
 * Enumerating the properties of an object happens in an arbitrary order, the grading server handles this appropriately.
 * When parsing CSV input, it is not necessary to be RFC 4180 compliant as long as the grading successfully passes.
 * Later lectures will cover how to handle user input appropriately. For now, you do not need to sanitize it.
+
+Please note that the grading server does unfortunately not support ECMAScript 6 which prevents the usage of arrow functions and other JavaScript extensions.
 
 ## `javascript/8-tools` / `javascript/9-debug`
 For these two, the actual exercises are stored on the grading server. They contain flags / values that are individual to each student and that you are asked to find. For the first one, navigate to the following link and use the developer tools to find them. You can find hints on where to find them in the corresponding text file.
