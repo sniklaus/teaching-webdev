@@ -29,7 +29,7 @@ var parser = require('body-parser'); // do not change this line
 
 // http://localhost:8080/list should return the stored messages (from the global variable) 'name: message' in plain text
 
-// http://localhost:8080/form should return the form as shown aboe
+// http://localhost:8080/form should return the form as shown above
 
 // http://localhost:8080/new should retrieve the post data using the body parser, save the name / message (in a global variable) and return 'thank you for your message' in plain text
 
