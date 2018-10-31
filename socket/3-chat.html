@@ -19,12 +19,6 @@
 		<script type="text/javascript">
 			var objectSocket = io.connect('http://localhost:8080/');
 
-			var strIdent = '';
-
-			objectSocket.on('hello', function(objectData) {
-				strIdent = objectData.strIdent;
-			});
-
 			objectSocket.on('clients', function(objectData) {
 				jQuery('#clients')
 					.empty()
@@ -41,7 +35,7 @@
 								)
 							;
 
-							if (objectData.strClients[i] === strIdent) {
+							if (objectData.strClients[i] === objectSocket.id) {
 								jQuery(this).find('option').last()
 									.text(objectData.strClients[i] + ' - me')
 								;
