@@ -1,5 +1,5 @@
 #!/bin/bash
 
-strServer="http://mercury.cs.pdx.edu"
+strServer="http://cs465.oregonctf.org/"
 strUser="CHANGE THIS"
 strPassword="CHANGE THIS"
