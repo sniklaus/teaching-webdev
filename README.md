@@ -4,7 +4,7 @@ This project provides the framework for my full stack web development class in w
 ## overview
 The repository contains all the exercises together with individual submission scripts. To effectively make use of the framework, you will need a login that you are going to receive at the beginning of the course.
 
-You can keep track of your progress on the [webinterface](http://mercury.cs.pdx.edu/) of the grading server. The score shown there is used as the basis for the grading of the exercise portion. Make sure to respect the deadlines, they are strictly enforced and not negotiable.
+You can keep track of your progress on the [webinterface](http://cs465.oregonctf.org/) of the grading server. The score shown there is used as the basis for the grading of the exercise portion. Make sure to respect the deadlines, they are strictly enforced and not negotiable.
 
 <p align="center"><img src="http://content.sniklaus.com/StackRect/Teaching/ScreenshotThumb.png" alt="ScreenshotThumb"></p>
 
@@ -33,7 +33,7 @@ bash 1-hello.bash
 
 This command should complete with a message stating that the username does not match. This is to be expected since we did not complete this exercise yet. Should this message not appear, make sure that you configured the setup file as stated in the download section.
 
-Try executing this command again after updating the `1-hello.txt` and replacing the questions marks with your username that you were given. The command should now complete with a success message and the [webinterface](http://mercury.cs.pdx.edu/) of the grading server should now indicate that you received a point for this exercise.
+Try executing this command again after updating the `1-hello.txt` and replacing the questions marks with your username that you were given. The command should now complete with a success message and the [webinterface](http://cs465.oregonctf.org/) of the grading server should now indicate that you received a point for this exercise.
 
 Please note that every exercise only has a single file that you are asked to modify. Therefore, you cannot, for example, add an additional file and add a reference to it since the submission system would not upload it to the grading server. Similarly, some exercises consist of a server and a client where one of them is already provided and you are asked to complete the other one. In this case, you cannot modify the already provided server or client since it likewise would not consider your changes.
 
@@ -80,11 +80,11 @@ Please note that the grading server does unfortunately not support ECMAScript 6 
 ## `javascript/8-tools` / `javascript/9-debug`
 For these two, the actual exercises are stored on the grading server. They contain flags / values that are individual to each student and that you are asked to find. For the first one, navigate to the following link and use the developer tools to find them. You can find hints on where to find them in the corresponding text file.
 
-* http://mercury.cs.pdx.edu/playground/javascript/tools.html
+* http://cs465.oregonctf.org/playground/javascript/tools.html
 
 For the second one, navigate to the following link and use the JavaScript debugger of the developer tools. You will have to set a breakpoint in order to inspect the contents of a variable that contains the flag. Furthermore, you will additionally have to set an earlier breakpoint and modify the content of this variable.
 
-* http://mercury.cs.pdx.edu/playground/javascript/debug.html
+* http://cs465.oregonctf.org/playground/javascript/debug.html
 
 ## `jquery/*`
 The exercises in this category already come with some scaffolding and provide inline instructions. You might find the following resources helpful to accomplish the given tasks.
@@ -184,15 +184,15 @@ In the `2-draggable` exercise, you can make use of the code that implemented the
 ## `security/*`
 The exercises in this category are similar to the last two exercises in the `javascript` category. They likewise ask you to visit a website on the grading server in order to obtain a flag. For the first one, navigate to the following link and determine the password of the hash that you are given there.
 
-* http://mercury.cs.pdx.edu/playground/security/hash.html
+* http://cs465.oregonctf.org/playground/security/hash.html
 
 For the second one, navigate to the following link and perform a SQL injection to obtain the flag. You will have to list the tables that are available within the database and fetch the tuples from a particular one of them that contains the flag.
 
-* http://mercury.cs.pdx.edu/playground/security/injection.html
+* http://cs465.oregonctf.org/playground/security/injection.html
 
 The last one asks you to perform a cross-site scripting attack. Navigate to the following link and inject a script that reads the cookies and forwards them as specified in the instructions. The response from this forwarded request will contain the flag.
 
-* http://mercury.cs.pdx.edu/playground/security/scripting.html
+* http://cs465.oregonctf.org/playground/security/scripting.html
 
 ## linux lab
 When connecting remotely into the Linux lab, please choose one of the machines in the [first](https://cat.pdx.edu/labstatus/labs/cslinlaba/) or the [second](https://cat.pdx.edu/labstatus/labs/cslinlabb/) lab. After selecting a machine, you can use your credentials to establish a connection through ssh. Note that you can alternatively use PuTTY as well.
