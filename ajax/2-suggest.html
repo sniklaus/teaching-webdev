@@ -13,7 +13,7 @@
 		<pre id="output">output</pre>
 		
 		<script type="text/javascript">
-			// when somebody enters 'b' into the input textbox, the script should make a get request to: http://cs465.oregonctf.org/playground/ajax/suggest.json?strFile=b
+			// when someone enters a letter (example: 'b') into the input textbox, the script should make a get request to: http://cs465.oregonctf.org/playground/ajax/suggest.json?strFile=b with the query string parameter `strFile` set to the input letter as shown.
 			// the data that is being received by this query is in the json format and might look like: { 'strFiles':['bash','bunzip2','busybox'] }
 			// this received data should subsequently set as the content of the output element as follows: 'bash\nbunzip2\nbusybox'
 		</script>
