@@ -2,7 +2,7 @@
 
 var http = require('http'); // do not change this line
 
-// note: handling for the requested url should be generic and your server should appropriately respond to any path, including ones not listed below.
+// note: handling for the requests should be generic and your server should appropriately respond to any path, including ones not listed below
 
 // http://localhost:8080/hello should return 'you must be new' in plain text and set an ident cookie
 // http://localhost:8080/test should return 'last time you visited "/hello"' in plain text
